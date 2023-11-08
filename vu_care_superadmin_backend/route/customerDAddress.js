@@ -1,4 +1,4 @@
-const customeAddressController = require("../controller/customerdaddress");
+const customeAddressController = require("../controller/customerDAddress");
 const express = require("express");
 const router = express.Router();
 
