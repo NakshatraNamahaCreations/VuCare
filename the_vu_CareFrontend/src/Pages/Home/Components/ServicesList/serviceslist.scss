@@ -1,0 +1,119 @@
+.services_list {
+  background-color: #fff;
+  padding: 10px 0 80px;
+}
+.services_list_wrapper {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-top: -130px;
+  .services_box {
+    text-decoration: none;
+    color: #000;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-right: 1px solid #dde2e8;
+    border-bottom: 1px solid #dde2e8;
+    min-height: 170px;
+    width: 16.66%;
+    &:nth-child(6n + 0) {
+      border-right: 0px;
+    }
+    &:nth-child(n + 7) {
+      border-bottom: 0px;
+    }
+    img {
+      margin-top: 0px;
+    }
+    .more_count {
+      font-weight: 800;
+      font-size: 30px;
+    }
+    .name {
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
+.hide {
+  display: none;
+  text-decoration: none;
+}
+.show {
+  display: flex;
+}
+.fnt {
+  font-size: 25px;
+  font-weight: normal;
+}
+// Responsive
+@media screen and (max-width: 991px) {
+  .services_list {
+    padding-bottom: 20px;
+    .services_list_wrapper {
+      width: 100%;
+      .services_box {
+        width: 25%;
+        min-height: 140px;
+        img {
+          width: 45px;
+        }
+        .name {
+          font-weight: 400;
+          font-size: 14px;
+          margin-top: 10px;
+          line-height: 18px;
+        }
+        &:nth-child(n + 7) {
+          border-bottom: 1px solid #dde2e8;
+        }
+        &:nth-child(n + 10) {
+          border-bottom: 0px solid #dde2e8;
+        }
+        &:nth-child(3n + 0) {
+          border-right: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .services_list {
+    padding-bottom: 20px;
+    .services_list_wrapper {
+      width: 100%;
+      .services_box {
+        width: 33.33%;
+        min-height: 140px;
+        img {
+          width: 45px;
+        }
+        .name {
+          font-weight: 400;
+          font-size: 14px;
+          margin-top: 10px;
+          line-height: 18px;
+        }
+        &:nth-child(n + 7) {
+          border-bottom: 1px solid #dde2e8;
+        }
+        &:nth-child(n + 10) {
+          border-bottom: 0px solid #dde2e8;
+        }
+        &:nth-child(3n + 0) {
+          border-right: 0px;
+        }
+      }
+    }
+  }
+}

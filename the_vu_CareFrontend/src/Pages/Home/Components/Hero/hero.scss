@@ -1,0 +1,197 @@
+.hero {
+  height: 80vh;
+  background-color: #000000d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./../../../../Assets/Images/hero_back.jpg");
+  background-blend-mode: overlay;
+  .hero_text {
+    .welcome {
+      font-weight: 200;
+      font-size: 50px;
+      text-align: center;
+      color: #ffffff;
+      // margin-top: 90px;
+      span {
+        font-weight: 500;
+      }
+    }
+    .title {
+      width: 70%;
+      font-weight: 200;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-align: center;
+      margin: 0 auto;
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    .select-city {
+      height: 55px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 0;
+      padding: 0 20px;
+      margin-right: 20px;
+      min-width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #71859e;
+      cursor: pointer;
+      svg {
+        opacity: 0.7;
+      }
+    }
+
+    .custom_select {
+      margin-right: 20px;
+      .css-13cymwt-control,
+      .css-t3ipsp-control {
+        height: 55px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 0;
+        padding: 0 10px;
+        min-width: 300px;
+      }
+      div#react-select-3-listbox {
+        max-height: 300px !important;
+        min-height: max-content !important;
+        padding: 0;
+        background-color: #fff;
+      }
+      .drop_icon {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 6px;
+      }
+    }
+    input {
+      border: 0;
+      padding: 15px 15px 15px 50px;
+      background-color: #fff;
+      border-radius: 5px;
+      min-width: 500px;
+      background-repeat: no-repeat;
+      background-position: 15px 50%;
+      margin-bottom: 0;
+      &:focus,
+      &:focus-visible,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+  .drop_dow {
+    position: absolute;
+    top: 64%;
+    width: 22%;
+    max-height: 30vh;
+    overflow-y: scroll;
+    z-index: 100;
+  }
+
+  .drop_dow::-webkit-scrollbar {
+    display: none;
+  }
+  .drpshow {
+    display: none;
+  }
+  .drpshow1 {
+    display: flex;
+  }
+}
+
+// .modal_wrapper
+
+// Responsive
+@media (min-width: 991px) and (max-width: 1138px) {
+  .hero {
+    .hero_text {
+      margin-top: 60px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  // .hero {
+  //   .search {
+  //     flex-wrap: wrap;
+  //     margin: 30px 15px;
+
+  //     input {
+  //       margin-top: 15px;
+  //     }
+  //   }
+  // }
+}
+@media screen and (max-width: 991px) {
+  .hero {
+    .hero_text .title {
+      font-size: 56px;
+      line-height: 66px;
+    }
+    .search {
+      flex-direction: column;
+      .select-city {
+        margin-right: 0;
+        width: 100%;
+      }
+      input {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hero {
+    height: 90vh;
+    padding-bottom: 50px;
+    .hero_text {
+      .welcome {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        span {
+          font-weight: 200;
+        }
+      }
+      .title {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        width: 100%;
+        padding: 0 10px;
+        span {
+          font-weight: 800;
+        }
+      }
+    }
+    .search {
+      .custom_select {
+        margin-right: 0;
+      }
+      input {
+        min-width: 100%;
+      }
+    }
+  }
+}

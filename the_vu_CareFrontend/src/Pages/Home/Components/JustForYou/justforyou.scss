@@ -1,0 +1,104 @@
+.justforyou {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 0 80px;
+  .jf_wrapper {
+    margin-top: 50px;
+    .jf_box {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #00000020;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.dotList {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
+
+  &:hover .dot {
+    width: 8px;
+    max-width: 8px;
+    height: 8px;
+    max-height: 8px;
+    margin-right: 12px;
+  }
+
+  & .dot {
+    display: inline-block;
+    width: 4px;
+    max-width: 4px;
+    height: 4px;
+    max-height: 4px;
+    margin-right: 3px;
+    border-radius: 50%;
+    background-color: #d2d2d2;
+    transition: all 0.25s;
+    cursor: pointer;
+
+    &.active {
+      background-color: #e73439;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slides-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 25%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.clr {
+  color: rgba(128, 128, 128, 0.628);
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.jf_wrapper1 {
+  margin-top: 50px;
+}
+
+.jf_box {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #00000020;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 560px) {
+  .justforyou {
+    padding-bottom: 10px;
+    .jf_wrapper {
+      margin-top: 25px;
+      .jf_box {
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    }
+  }
+}

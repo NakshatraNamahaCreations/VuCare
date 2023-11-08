@@ -1,0 +1,19 @@
+.address{
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    .title {
+      padding: 25px;
+      border-bottom: 1px solid #71859e33;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+    }
+    .address_text{
+        padding: 20px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 151.34%;
+        color: #71859E;
+    }
+}

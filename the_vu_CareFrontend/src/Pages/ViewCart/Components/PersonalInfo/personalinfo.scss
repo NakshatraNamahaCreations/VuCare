@@ -1,0 +1,32 @@
+.personal_info{
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #71859e33;
+    .title {
+        padding: 25px;
+        border-bottom: 1px solid #71859e33;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .basic{
+        padding: 20px 25px 0px;
+        input{
+            background-color: #F8F9FA !important;
+        }
+    }
+    .address{
+        padding: 5px 25px 5px;
+        input{
+            background-color: #F8F9FA !important;
+        }
+        .in_title{
+            margin-bottom: 35px;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            color: #000000;
+        }
+    }
+}

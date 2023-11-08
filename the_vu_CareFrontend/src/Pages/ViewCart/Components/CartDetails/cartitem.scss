@@ -1,0 +1,100 @@
+.cart_item_box {
+  border: 1px solid rgba(113, 133, 158, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  .item_title {
+    padding: 20px 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 127.34%;
+    color: #000000;
+  }
+  .item_content {
+    padding: 15px 25px;
+    background-color: #71859e15;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .left_img {
+        height: 60px;
+        width: 60px;
+        overflow: hidden;
+        border-radius: 5px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .texts {
+        margin-left: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        h4 {
+          font-size: 18px;
+          line-height: 21px;
+          display: flex;
+          align-items: center;
+          color: #000000;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        p {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          display: flex;
+          align-items: center;
+          color: #71859e;
+          margin: 0;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .wrong_price {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration-line: line-through;
+        color: #71859e;
+      }
+      .real_price {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: right;
+        margin: 0 20px;
+        color: #03b162 !important;
+      }
+      .delete {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .cart_item_box {
+    .item_content {
+      flex-direction: column;
+      .left {
+        padding-bottom: 15px;
+      }
+      .right {
+        width: 100%;
+        padding-top: 10px;
+        border-top: 1px solid #00000010;
+      }
+    }
+  }
+}

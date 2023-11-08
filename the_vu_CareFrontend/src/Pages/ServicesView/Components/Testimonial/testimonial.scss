@@ -1,0 +1,59 @@
+.service_testimonial{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    .title{
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+    }
+    .video{
+        margin-bottom: 20px;
+        max-height: 180px;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        button{
+            border: 0;
+            background-color: transparent;
+            width: max-content;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+
+        }
+
+    }
+    .name{
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 26px;
+        text-align: center;
+        color: #000000;
+
+    }
+    .services_name{
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #B40821;
+    }
+}

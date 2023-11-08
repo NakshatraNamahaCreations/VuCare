@@ -1,0 +1,98 @@
+.details_wrapper_page{
+    background-color: #71859e0f;
+    padding-bottom: 0px;
+    position: relative;
+    padding-bottom: 0px;
+    .package_title{
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 26px;
+        color: #B40821;
+        margin-bottom: 15px;
+    }
+    .addon_title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .addon_text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 144.34%;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+    .view_cart{
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        .price{
+            width: calc(100% - 30px);
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            color: #000000;
+            margin: 0 auto;
+        }
+        .goto_cart{
+            padding: 15px 20px;
+            width: calc(100% - 30px);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .no_item{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+            span{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                img{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .details_wrapper_page{
+        .view_cart{
+            padding: 10px;
+            background-color:  #f5f5f5;
+            .price{
+            font-size: 16px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            }
+            .goto_cart{
+                width: 100%;
+                padding: 10px;
+            }
+            .view_cart{
+                padding: 10px 20px;
+            }
+        }
+    }
+}

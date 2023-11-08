@@ -1,0 +1,41 @@
+.details_header {
+  padding: 100px 0px 30px;
+  background-color: #03b1620d;
+  .detail_links {
+        margin-bottom: 15px;
+    a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 83.5%;
+        padding: 15px;
+        color: #000000;
+        text-decoration: none;
+        &:first-child{
+            padding-left: 0;
+        }
+        &.active{
+            font-weight: 700;
+            color: #03b162;
+        }
+    }
+  }
+  .booking_id_title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    margin-bottom: 6px;
+  }
+  .booking_id_text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1366px) {
+  .details_header {
+      padding: 140px 0 30px;
+  }
+}

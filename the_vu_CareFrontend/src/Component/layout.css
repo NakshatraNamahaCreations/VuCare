@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;300&display=swap");
+
+.bg {
+  background-color: black;
+}
+.boldt1 {
+  font-weight: bolder !important;
+}
+.bgimg {
+  min-height: 80vh;
+  background-image: url("../../public/assests/bghe.jpg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: fit-content;
+  background-size: cover;
+}
+.fnt,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.sty {
+  font-family: "Montserrat", "Poppins";
+}
+.fnt14 {
+  font-size: 13px;
+}
+.fnt16 {
+  font-size: 18px !important;
+}
+.clr {
+  color: black;
+  font-weight: 300;
+  font-size: 20px;
+}
+.hd {
+  height: 30vh;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.brd {
+  border-radius: 10px;
+}
+.fnt12 {
+  font-size: 13px;
+}
+.fsd {
+  font-size: 18px;
+}
+
+.selct {
+  height: 15px;
+  overflow-y: scroll;
+}
+.ps {
+  position: absolute;
+  top: 26%;
+  right: 32%;
+}
+.imgbr {
+  border-radius: 100px;
+}
+.custom-dropdown {
+  pointer-events: none;
+}
+
+.custom-dropdown:hover {
+  background-color: inherit;
+  cursor: not-allowed;
+}
+.custom-dropdown-toggle::before {
+  display: none !important;
+}
+
+/* .slider-item {
+  padding: 0 px;
+} */
+
+.slick-sliders {
+  width: auto !important;
+}
+.slick-listsd {
+  display: flex;
+  justify-content: space-around !important;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 0px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.brclr {
+  border: 2px solid rgb(236, 236, 40) !important;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #000;
+}
+
+.crdbor {
+  border-bottom-right-radius: 400px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.clr2 {
+  background-color: #03b162;
+}
+.clr3 {
+  color: white;
+}
+.btnd {
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  margin: auto;
+}
+.mrgn {
+  margin-top: 150px !important;
+}
+.yellw {
+  background-color: #fbd83f;
+}
+.yellw1 {
+  color: #fbd83f;
+}
+.borderrad {
+  border: none;
+}
+.border1 {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.grndclr {
+  color: #03b162;
+}
+.fntfamil {
+  font-family: "adobe-clean", sans-serif;
+}
+.rdi {
+  border-radius: 20px;
+}
+.boldt {
+  font-weight: bold;
+}
+
+.rdiu {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.rdiu2 {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #fbd83f;
+}
+
+.sty {
+  list-style-type: none;
+}
+.boldbtn {
+  font-weight: 600;
+}
+.medis {
+  position: absolute;
+  top: 62%;
+  left: 4%;
+}
+
+.medis1 {
+  border: 1px solid white;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 100px;
+}
+.firstcart {
+  position: relative;
+  bottom: 30%;
+  right: 7%;
+  /* border-bottom-right-radius: 140px; */
+}
+
+.imgs {
+  width: 150px;
+  height: 150px;
+}
+.drop_dow {
+  position: absolute;
+  height: 40vh;
+  overflow-y: scroll;
+  z-index: 100;
+}
+.p {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+.mtchan {
+  margin-top: -30px;
+}
+.drop_dow::-webkit-scrollbar {
+  display: none;
+}
+.modal_header {
+  background-color: #03b162 !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .medis1 {
+    width: 180px;
+    position: static;
+  }
+  .medis2 {
+    width: 100px;
+  }
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+  .btn {
+    width: 120px;
+    /* height: 30px; */
+  }
+  .textsi {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .medis4 {
+    width: 150px;
+    position: static;
+  }
+  .medis3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputd {
+    width: 100%;
+  }
+  .inputbox {
+    height: 10vh;
+  }
+  .inputbox {
+    margin-left: 10px;
+  }
+  .medis2 {
+    width: 80px;
+  }
+  .imgsub {
+    width: 100px;
+    height: 50px;
+  }
+
+  .imgd {
+    width: 45px;
+    height: 45px;
+  }
+
+  .btn {
+    width: 100px;
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .textsi {
+    font-size: 8px;
+  }
+}

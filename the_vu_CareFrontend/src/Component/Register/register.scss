@@ -1,0 +1,144 @@
+.register {
+  background-color: #fff;
+  .page_heading {
+    height: 30vh;
+    background-color: #000000d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./../../Assets/Images/hero_back.jpg");
+    background-blend-mode: overlay;
+    .title {
+      margin-top: 130px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+  }
+  .register_wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 80px auto;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    .login_header {
+      padding: 25px;
+      border-bottom: 1px solid #71859e36;
+      .title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+      }
+    }
+    .login_body {
+      padding: 25px;
+      button {
+        background: #03b162;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #ffffff;
+        border: 0;
+        width: 100%;
+        padding: 18px;
+        &.signup {
+          margin-top: 15px;
+        }
+      }
+    }
+    .login_footer {
+      border-top: 1px solid #71859e36;
+      padding: 25px;
+      width: 100%;
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        color: #000000;
+      }
+      .action {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        button {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 45%;
+          border: 0px;
+          border-radius: 8px;
+          padding: 14px 30px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          img {
+            margin-right: 15px;
+            width: 19px;
+          }
+          &.google {
+            background-color: #fff;
+            color: #000;
+          }
+          &.apple {
+            background-color: #000;
+            color: #fff;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.cit-mange {
+  display: grid;
+  grid-template-columns: repeat(2, auto) !important;
+  height: fit-content !important;
+  grid-gap: 0px;
+  cursor: pointer;
+}
+.activecity:hover {
+  background-color: #03b162;
+  width: max-content;
+  border-radius: 5px;
+}
+.cit-mange > * {
+  grid-column: span 1;
+}
+
+@media (min-width: 992px) and (max-width: 1240px) {
+  .register {
+    .page_heading {
+      height: 35vh;
+      .title {
+        margin-top: 180px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .register {
+    .register_wrapper {
+      margin: 20px auto;
+    }
+    .page_heading {
+      height: 20vh;
+      .title {
+        margin-top: 75px;
+        font-size: 26px;
+      }
+    }
+  }
+}

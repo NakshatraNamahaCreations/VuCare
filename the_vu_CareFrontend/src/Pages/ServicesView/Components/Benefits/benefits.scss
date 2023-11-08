@@ -1,0 +1,40 @@
+.benefit{
+    background-color: #71859e0f;
+    padding: 50px 0;
+    .benefit_box{
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 25px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        img{
+            margin-right: 10px;
+        }
+        .text{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .benefit{
+        padding: 20px 0;
+        .benefit_box{
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            .text{
+                font-size: 16px;
+            }
+            .icon{
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

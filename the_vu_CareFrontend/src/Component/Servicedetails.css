@@ -1,0 +1,27 @@
+.area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.area label input {
+  display: none;
+}
+
+.area label input + span {
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  padding: 8px 18px;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.area label input:checked + span {
+  background: #2db408;
+  color: #fff;
+}

@@ -1,0 +1,23 @@
+.service_time{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    .title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+    }
+    .serve_date{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+        margin-top: 15px;
+        span{
+            color: #B40821;
+            display: block;
+            margin-top: 5px;
+        }
+    }
+}

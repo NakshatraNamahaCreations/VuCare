@@ -1,0 +1,205 @@
+.payment {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #71859e33;
+  margin-bottom: 30px;
+  .title {
+    padding: 25px;
+    border-bottom: 1px solid #71859e33;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .options {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #71859e33;
+
+    .p_text {
+      color: #b40821;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .add {
+      button {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #ffffff;
+        background-color: #000000;
+        padding: 10px 20px;
+        border-radius: 5px;
+        letter-spacing: 0.3px;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+    // Custom Checkbox
+    .check_container {
+      display: block;
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 0px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+    }
+
+    .check_container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      border: 1px solid #71859e50;
+      border-radius: 5px;
+    }
+
+    .check_container:hover input ~ .checkmark {
+      background-color: #fff;
+    }
+
+    .check_container input:checked ~ .checkmark {
+      background: #fff;
+      border: 1px solid #b40821;
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .check_container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .check_container .checkmark:after {
+      left: 2px;
+      top: 2px;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      background-color: #b40821;
+      border-radius: 4px;
+    }
+  }
+  .card_details {
+    padding: 20px 25px 0px;
+    border-bottom: 1px solid #71859e33;
+    input {
+      background-color: #f8f9fa !important;
+    }
+  }
+  .card_no{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #71859e33;
+    .card_no_wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 15px;
+        img{
+            width: 32px;
+        }
+        .hidden_no{
+            letter-spacing: 1.5px;
+            color: #71859E;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 19px;
+            padding: 0 10px;
+        }
+        .highlight{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+    .check_container {
+        display: block;
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+        color: #71859E;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .check_container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #B40821;
+        border-radius: 5px;
+      }
+
+      .check_container:hover input ~ .checkmark {
+        background-color: #fff;
+      }
+
+      .check_container input:checked ~ .checkmark {
+          background: #B40821;
+      }
+
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .check_container input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      .check_container .checkmark:after {
+          left: 7px;
+          top: 3px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+      }
+  }
+}

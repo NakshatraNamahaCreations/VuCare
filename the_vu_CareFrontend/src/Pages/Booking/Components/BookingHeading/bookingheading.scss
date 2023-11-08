@@ -1,0 +1,28 @@
+.book_heading {
+  padding: 100px 0px 30px;
+  background-color: rgba(8, 180, 27, 0.05);
+  .book_heading_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      h3 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        color: #000000;
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .book_heading {
+    padding: 140px 0 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .book_heading {
+    padding: 100px 0 30px;
+  }
+}

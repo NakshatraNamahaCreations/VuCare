@@ -1,0 +1,192 @@
+.login {
+  background-color: #fff;
+  .page_heading {
+    height: 30vh;
+    background-color: #000000d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./../../Assets/Images/hero_back.jpg");
+    background-blend-mode: overlay;
+    .title {
+      margin-top: 130px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+  }
+  .login_wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 80px auto;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    .login_header {
+      padding: 25px;
+      border-bottom: 1px solid #71859e36;
+      .title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+      }
+    }
+    .login_body {
+      padding: 25px;
+      .action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+
+        .check_container {
+          display: block;
+          position: relative;
+          padding-left: 28px;
+          margin-bottom: 0px;
+          cursor: pointer;
+          font-weight: 300;
+          font-size: 15px;
+          letter-spacing: 0.5px;
+          line-height: 22px;
+          color: #71859e;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .check_container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          border: 1px solid #03b162;
+          border-radius: 5px;
+        }
+
+        .check_container:hover input ~ .checkmark {
+          background-color: #fff;
+        }
+
+        .check_container input:checked ~ .checkmark {
+          background: #03b162;
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .check_container input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .check_container .checkmark:after {
+          left: 7px;
+          top: 3px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+      .forget {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #000000;
+      }
+      button {
+        background: #03b162;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #ffffff;
+        border: 0;
+        width: 100%;
+        padding: 18px;
+      }
+    }
+    .login_footer {
+      border-top: 1px solid #71859e36;
+      padding: 25px;
+      width: 100%;
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        color: #000000;
+      }
+      .action {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        button {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 45%;
+          border: 0px;
+          border-radius: 8px;
+          padding: 14px 30px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          img {
+            margin-right: 15px;
+            width: 19px;
+          }
+          &.google {
+            background-color: #fff;
+            color: #000;
+          }
+          &.apple {
+            background-color: #000;
+            color: #fff;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .login {
+    .login_wrapper {
+      margin: 20px auto;
+    }
+    .page_heading {
+      height: 20vh;
+      .title {
+        margin-top: 75px;
+        font-size: 26px;
+      }
+    }
+  }
+}

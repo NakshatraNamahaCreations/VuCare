@@ -1,0 +1,94 @@
+.details_wrapper{
+    padding: 50px 0;
+    background-color: #71859e25;
+}
+
+
+.tracking {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 20px 15px;
+    .detail_traking {
+      padding: 20px 35px 20px 60px;
+      .steps {
+        position: relative;
+        min-height: 85px;
+        .date {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000;
+          margin-bottom: 3px;
+        }
+        .text {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #71859e;
+        }
+        &::after {
+          content: "";
+          height: calc(100% - 33px);
+          width: 2px;
+          background-color: #71859e;
+          position: absolute;
+          left: -32px;
+          top: 35px;
+        }
+        &::before {
+          content: "";
+          background-image: url("./../../../../Assets/Images/pending.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 28px;
+          width: 28px;
+          background-color: #fff;
+          position: absolute;
+          border: 2px solid #71859e;
+          left: -45px;
+          border-radius: 50px;
+          top: 0px;
+        }
+        &.success {
+          &::before {
+            background-image: url("./../../../../Assets/Images/complete.svg");
+            color: #1de460;
+            border: 2px solid #1de460;
+          }
+          &::after {
+            background-color: #1de460;
+          }
+        }
+        &.proccessing {
+          &.previus {
+            &::after {
+              background-color: #1de460;
+            }
+          }
+          &::after {
+            background-color: #71859e;
+          }
+          &::before {
+            background-image: url("./../../../../Assets/Images/progress.svg");
+            color: #f3ae1c;
+            border: 2px solid #f3ae1c;
+          }
+        }
+        &.blank {
+          &::before {
+            content: "";
+          }
+        }
+        &:last-child{
+          min-height: max-content;
+            &::after {
+                display: none;
+              }
+          }
+      }
+    }
+  }
+  

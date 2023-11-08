@@ -1,0 +1,16 @@
+.callback{
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    .title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+    input{
+        background-color: #F8F9FA !important;
+    }
+}
